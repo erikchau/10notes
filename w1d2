@@ -1,0 +1,64 @@
+euclids elements
+Mathematics for programmers
+
+complexity
+functino types - how they grow
+
+what is 0/0?
+1/1 1/0 0/1 - consider
+
+division \expressed a multi
+0/0 = ? => 0 * ? = 0 ===== ? can be anyyting ; undefined
+
+domain input
+range output
+
+func types we care about
+linear
+constant
+quad
+sqaure root
+expo
+log
+factorial
+
+greather than n^2
+take out n^2 part -> optimize and run it n times
+
+sqrt runtime ->>>>>>>>>>>>>>> whaaaaaaaaa
+figuring out with a number is a prime - only have to chekc up to square root of number
+ex2. precomputing
+
+exponential runtime
+ex1. combinations and permutations
+
+factorial runtmie
+fibonacci no memoization
+
+limits
+as x become closer to some value c, what does function do
+1/x  = x ^ 0 / x ^ 1
+same rates -> look at coefficients
+* look at rates to figure limits
+
+review asymptotes?  horizzatonal vs verticla
+horizaontl: take x -> inf
+vertical: set dominornator to 0 and solve
+
+nlog(n) -> pseudolinear , best runtimes for sorting algos
+
+
+MODULAR ARITHMATIC
+2 major uses
+  iterate over a set and go back to the start
+  security
+
+take numberline an mkae it a circle
+7%3 = 1
+^ hard to figure out based only on input form x %3 = 1
+
+combinations and permutations
+n : number of elememtns
+r : number of things in choice
+nPr = n! / (n-r)! -> permutation order matters
+combinations combining choices; order doesnt matter -> nCr = n! / ((r!)(n-r)!)

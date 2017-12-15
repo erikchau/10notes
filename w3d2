@@ -1,0 +1,119 @@
+Networking
+from ethernet to https
+
+OSI model
+  [phycsial
+  data] ETHERNET II
+  Network
+  transport
+  (session)
+  (presentation)
+  application
+
+  Physical Layer
+    two wires set,  one ground for each
+    manchester encoding
+    alternating 1 and 0s at an interval
+    preamble first is 55 1s and 0s folloerd by a tailing 1
+    cable - ethernet
+    real world implications of transmiting data via medium
+
+  Data link Layer
+    connecting multple computers - making a network
+    collisions are an issue
+    old models
+      bus model
+      ring network / token ring
+    currently using-
+      hub and spoke Network/ star
+    MAC  -media access control
+      each device give a uqnie address
+      physically associated address
+    DATA
+      ME | FOR WHO | DATA | cyclic reduncy check - just ensures emssage wa recieved in totality
+
+  NETWORK Layer
+    connecting networks together ( network of networks)
+    connect hubs from data link layers together
+    mac address only used at a local scale
+    hierarchial in nature so we can distnguish groups of machines
+    IPv4
+      all i know need to knwo is the hubs i am connected to
+      ROUTING TABLES
+      for each port, what is range of address i can access through it
+      gateway interface - interface for gonig up ip chain
+      PACKET
+        TTL
+      MAC to ip for local network
+        ARP address resolutino protocol
+      issues
+        no packet order
+        no serperation of services ( applications)
+          world of warcraft vs slack
+          give them an ID - port numbers
+        stateless
+        no data level error checking or correction
+
+  TRANSPORT
+    tcp vs udp
+      udp is stateless ( no connection is kept open) and has no ordering of packets
+      udp overhead is less
+    tcp
+      seperation of services via ports
+      packet ordering
+      check sum/ error checking
+      congestion control
+      stateful
+      as a reciever, for every packet i get  i send back a small response saying i recieved it
+      congestion window
+        how much space left in buffer to store packets to be processed
+      flags
+        3 way handshake
+        user - >FIRST PACKET EMPTY but iwth SYN flag
+        server <- sends back ACK flag, but also sends its own SYN in same packet
+        user -> send back ACK
+        statefull connection now established
+
+        when donw send fin ->
+        ack fin <-
+        ACK ->
+
+  HUBS SWITCHS VS ROUTERS
+    hubs dumb, no switching just repeating
+      broadcasts to all connectino machines
+    switches - LAYER 2 can switch on MAC
+    ROTUER LAYER 3 - switch on IP
+    NAT - used to bridge a local network to an external network
+      nat hole punching
+
+    Application - LAYER 7
+      DHCP
+      SSL/TLS - transport layer security
+      POP post office protocol
+      WEBSOCKETS
+        upgrade connection
+        usually -> send request get repsonse, close conenction
+        websoacks , DONT CLOSE connection
+      DNS
+        make dns request to map google.com -> IP address
+        wwww.google.com
+        13 root servers
+        resolve right to left
+      HTTP / https
+        80/ 443
+        response / request pair
+      CONNECTION KEEPALIVE VS WEBSOCKETS
+        keepalive every request needs well formed http request
+        websockets can send any data
+
+      TLS/SSL
+        same three way handshake from tcp CONNECTION
+        but some number is used to create a key
+        certiicate is sent
+
+google.com in browerser
+who is goole.com - dns
+(tcp before ssl)
+start ssl handshake
+once key is figured out - encrypt http request and sent to ip adress
+server will use handskae info to read and process http request and send http response with body being html response

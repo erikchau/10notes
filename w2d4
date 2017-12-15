@@ -1,0 +1,56 @@
+ALGORITHMS
+sorting babay
+
+two groups of three
+  simple sorting (on2)
+    insertion
+    selection
+    bubble
+  complex
+    quick
+    merge
+    heap
+
+INSERTIONS SORTTTT
+  - |sorted area| SHUFFLED area
+  keep moving shuffeld area down until it falls into area where it is larger than next area in sorted area comparison
+   | 1 2 4 | 3 5 9 7 -> |1 2 3 4 | 5 9 7 -> repeat
+
+selection sort
+  on each loop, find smallest elelment
+  swap it to its proper place
+  repeat with subarray starting from next index
+
+bubble sort
+  from start to end - 1
+  compare element and its next one
+  swap if needed
+  bubbles up
+
+NUMBER OF SWAPS it takes to sort ANOTHER metric
+selection - only n SWAPS
+bubble sort n^2 SWAPS
+
+selection sort eeeeeeeeeetsy bit better :P
+
+complex divide an conquer
+
+MERGE SORT
+memory intensives
+
+HEAPSORT - HEAPS BABYYY
+heap as an array or a tree
+treat array as if it was a heap from the beginning
+sift up , or sift down
+sifting down, will have to sift evry element down
+  start half way though, move backwards and sift everything down - n time operation
+  NOW I HAVE A FRIGGIN HEAP WOOOOOOT!!!!
+  steps to sort NOW
+    swap largest thing frm heap with last thing
+    sift down the smallest thing now at front
+    continue this action with a shrkinging heap from back , end of array has srted elements
+
+
+quick sorted - at worst runs at n^2
+BUT can do it in place and uses significantly less space
+  choose a pivot, usually at end

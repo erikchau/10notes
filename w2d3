@@ -1,0 +1,58 @@
+HASHES and GRAPHS
+
+hash function
+md5
+input of infinite domain (set) -> retuen an outpur within a fixed range
+0 - 2^64 range for 64 bit machines
+
+hashtable (hashmap_)
+simepliest way -> take unumberlinea nd make it cirular ( modulo)
+need tto look up values weve stored before
+  - deterministic
+
+COLLISIONS - infiniately many collisions since input size is inifite
+should be as uniformly distributed as possible - HIGH Z SQUARED SCORE - OUTPUT
+PROBLEM input could not be evenly distributed  - ie dictinary or phone book
+NON CLUSTERING - clustered input should not be clusrtered in output
+WANT ALL btis of intput to contribute to some part of output - other wise clustering again
+
+RABIN_KARP
+cn^(k-1) + ..... cn(k*0) % size of set
+
+colissions - expand set, going to be O(n) operations to resize hashmap
+other opsions every bucket is acually the start of a linked list
+  - store key for lookup and value
+
+BLOOM FILTERS
+
+
+
+GRAPHS
+serires of internconnected lsit
+ant node can have as many refernces and can be linked to ay other nodes
+graph as no real root
+nodes -> vertices
+EDGDES CAN HAVE VALUES - vertices adjoining,metadata abotu connevtion
+links - edgdes
+runtime compoxities - related to edges and vertices
+O(VE)
+directed (twitter) undirected(facebook)
+
+adjacency list
+adjacency matrix
+incidence matrix
+
+no root
+instead can have a lsit of edges and nodes - Al
+  represent strucure as lsit of vertices and antother list of tings they are adjacent to
+Adjacent matrix
+
+add vertice
+remove vertices
+cerate connection
+remove connection
+get vauels associated to vertix
+change edge values
+
+adjacent - gievn two nodes are they adjacent
+neighbors, given a node what is adjacent

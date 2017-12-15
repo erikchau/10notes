@@ -1,0 +1,89 @@
+Trees vs arrays
+
+use for array
+look up speed for array
+ordered
+
+2 approcahes to datastructures
+node - linked list
+or node with all mthods on it -> recursively thoght about
+
+node has key, and value
+
+BST
+root node - two child nodes
+
+HEAP
+root node
+doesnt have to be binary - can have multiple children
+BIDARY HEAP
+
+TRIE
+
+
+BINARY SEARCH TREE
+root is median - left smaller, right larger
+if SAME value on key what do
+  possbilities -> counter, add new nodes ....
+BALANCING TREEE
+  ex  5- 7- 8- 11  ===N lookup
+  ie  8 - 7 - 5 , - 11 === logN lookup
+
+Traversing a TREE
+BFS ( self, left, right),
+  iteraive
+  queue
+  seedw ith root nodes
+  until queue is empty, process work then process children
+DFS ( left, self, right)
+  left self right - INORDER
+  preorder- children then me
+  postoder -me then children
+
+DFS always returns in order
+O(n) spae
+  take median and add to tree then  process left and ritght
+
+DAY STOUT WARREN - BALANCING tree
+tree to vine
+
+rebalance when needed
+keep count of number of children on right and left and total number of children
+everytime you insert, increment counters
+
+Trees vs arrays
+can represent tree in continous memory
+DFS -> get tree items back in order
+consider BFS-> spitsout somthing with no real ordered
+[5,3, 7, 2, 4, 6, 8] p = | (i - 1) / 2| l = 2I + 1, r = 2i+ 2 -> for this method to work, tree has to be in leftist representation
+must run DSW firt to get leftist tree then do this
+
+IN ORDER SUCCESSOR - go one right then go as far left
+
+HEAPS
+min and max
+every parent has to be greater or equal to its children - no left or right ,only up and down
+biggest number is root of set -> can always get largest number
+can utilize a heap for sorting
+put heap in array represenatino -> BFS
+SIFTING DOWN
+
+
+RANDOM ARAY INTO HEAP
+heapify
+
+HEAP OPS
+peek O(n)
+push put elemnet int end of array then sift up log(n)
+pop log(n)
+merge - O(n)
+
+
+TRIE -> prefix tree -> radix tree
+NODE DOES NOT REPRESENT VALUE
+in tree node was value
+insert O(m) cost of insert changes relative to a different variable
+  n is size of set
+  m - is length of word
+position in tree, not node represet set of prefixes
+permutations are tries

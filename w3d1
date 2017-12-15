@@ -1,0 +1,103 @@
+DATABASESEEEESESESESESE
+persistence
+  in memory
+  persistent
+relational
+  sql
+key value
+  redis
+document
+  mongo
+graph
+  graphql - neo4j
+
+uses same datastrcutures weve covered underlying
+provides persistence by writing to disc
+
+In memory
+  keeps data in ram
+  needs to be rebuilt on start
+  fast_FAST_FAST
+  lost when program closes
+
+  ex - use
+  precomputation - on startup of a server do "caching" or start up work
+
+persistent
+  some kept in ram,  but writes to disc
+  disc speed loookup needs to be considered
+  very little start up cost
+  relatively slower
+
+  mysql is jsut a binary search tree
+
+RELATIONAL DATABASE
+    data stored in table
+    tables stored as rows and colums
+    underlying data strucure is BST or array
+    queries is typically done via sql
+
+    sql primry key
+      means way data is stored in disc is ordere by primary key
+      ie an array
+      if every row is same columns - we have objets of same size
+      looking up by id is O(1)
+       | 1) JON, m, 23 .... ect | 2) Sally, f, 22 .....-------------------------------------------------------|
+      looking up by id easy, remember arrays
+      looking up by name is O(n)
+      query executino plan
+      CAN SPEED UP WTH INDEX
+        index keeps trac of all records in ordere
+        BINARY SEARCH TREE
+            JON
+          BOB  SALLY
+        cerate index on ....
+        BST in relation to everythign else
+        when insertin into db
+        need to add to list and insert into index BSTs
+
+    TRADING LOOKUP FOR INSERT SPEED
+      based on index
+      index needs to be inserted into BST
+      log(n) additional time
+    can do page, table, row lock on query
+
+    keys
+      keys used for BSTs
+
+    ASSOCIATIONS
+      many -to -many relationhip has a third table (forgot wht its callled) JOIN TABLE
+
+    where to store data
+      normalization -ex top 3 fav colors -
+        name[gene] | colors[blue, red green]
+      1nf - each cell must have 1 value -
+        gene| color 1 blue | color 2 red.....
+      2nf - no cell is dependent on any field except the key
+        | id | name| office | city
+         1     gene   825 bat  sf
+         5     genert  500 f  ny
+         CANNOT have
+         5     genert  500 f  SF
+         office and city are kinda related
+      3nf and nothing but the keys
+      DNF - DATAWAREHOUSING - bigdata
+        not normalized
+        never going to update
+
+key-value
+  hash table or BST
+  give up ordering, cannot scan keys without expensive op
+  can lookup o(1)
+  caching output
+  memcache stores anythin
+  redis has types
+
+document
+  stored as documents, with keys,  in groups known as Colelctions
+  underlying strucuture is double linked list
+  each doc can have nested value
+  on disc represented as BSON
+  indexes are stored as BST
+  NO RELATIONSHIPS IE JOINS
+  similiar to relational database

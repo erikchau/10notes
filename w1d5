@@ -1,0 +1,55 @@
+TODO over the weekend - come upw ith stories work on soft skills
+
+Data structures
+arrays - vectors - linked lists - queues and stacks
+
+common properties of all data structures
+dealing with set of items
+  we can do things with set
+  what are common things we wan to do
+
+types
+linked list - basis
+array - what are they
+
+
+LINKED LIST
+stringssssssss
+each char is 8 bits 1 byte
+all memory is addressable by byte
+
+chars and pointers in C
+
+VECTORS:
+  dynamically sized
+  insert - AMORTIZD O(1)
+
+ARC - automatic refernce counting - CLANG
+
+LINKED LIST
+broken chunks of data
+non - contiguous
+two part - thing held; address of where to find next thing
+empty data in pointer  - end of list ; we are done
+size used -
+  s = size of 1 element(32 bit int)
+  a = address 64 bits
+  total :32 * 64 * n
+- each elemtn stored within node
+  each node has a reference to the next node
+first thing is root or head
+o -> o -> o -> 0
+
+LRU CACHE uses ciruclar linked lists
+
+MULTIPLY LINKED LIST
+each node has not just one next pointer, but many
+can store two types of order
+ie age and name
+
+SENTINEL NODES
+subclass of node that indicates start and end
+remove pointers in methods on linked lists
+
+Qs and stacks
+Q - enqueue

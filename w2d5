@@ -1,0 +1,40 @@
+AGORITHMS 2
+DIJKSTRAS - SEARCHING - COMPLETENESS - DECISIONS
+
+BINARY SEARCHING
+two ways to represent
+array or tree
+in array
+  far left, far right are furthest children
+  mid is root
+traversing a tree
+  runing somethin on each tree
+
+COMPLETENESS
+p vs np
+sqrt of 9 -> -3, 3 cannot be turing machine compatible
+turing machine for every input there is only one output
+
+p
+  can get to answer in polynomial time
+
+np
+  not polynomial
+  VERIFIABLE IN POLYNOMIAL
+  i can check answer in polynomal time though
+  usualy combinatorial
+  o(n!)
+  (2^n) - exp
+np- hard
+  canot determine or prove solution in polynomial time
+SUDOKU
+
+np-complete
+edge of np and np-hard problems
+
+DIJKSTRAS
+graph
+using a heap to store next smalleest route
+runtime -> (v+e)log(V)
+v+e cause we have to visit every vertex and edge
+log(v) from heap finding next one

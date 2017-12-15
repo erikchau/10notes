@@ -1,0 +1,51 @@
+Erik Chau
+Front End Web Developer
+
+2126 Dwight Way Apt 12, Berkeley CA
+(831) 359-0041
+erik.chau@gmail.com
+
+https://www.erikchau.github.io./
+https://www.github.com/erikchau/
+https://www.linkedin.com/in/erikchau/
+
+Experience
+  Tapsense
+  Front End Software Engineer
+  September 2014 - Present, San Francisco CA
+    * Migrated and revamped entire TapSense website from dated Wordpress CMS to modern Keystone.js framework.
+    * Restructured site from unstructured collection of pages to an application that uses routes and views
+
+    * Split and refactored 4000+ line css file into component and page specific sheets for easier maintainability and readability.
+    * Prototyped, planned, and built several applications for TapSense advertising campaign management, ad serving settings, and reporting on the dashboard.
+    Applied knowledge of MVC, JavaScript, and HTML and CSS  to write frontend components in Backbone.js framework. Backend components were written in Java and collaborated with other engineers to design API endpoints
+    * Implemented monitoring scripts to detect potential problems in infrastructure such as full disks, dead processes, and overloaded machines in Python using the AWS API.
+    * Sped up dashboard page load speeds by several seconds by storing large sets of infrequently changed data on the client side using local storage
+    * Used Web Workers to process large data sets in the background on the client side without locking up UI.
+    * Replaced classic AWS instance infrastructure with AWS VPC infrastructure
+    * evaluated costs between interzone instances to reduce monthly costs by hundreds of dollars monthly by configuring web machine instances to prefer performing database operations to databases located within the same zone.
+
+//put somtihg related to distributed systems (chronos/ mesos / zookeeper)
+//agggregation ?
+//dockerize?
+
+// look at esther linkedin
+
+Skills
+  JavaScript, HTML, CSS, React, Backbone.js, MongoDB, Node, npm, Webpack, AWS, Python
+
+Projects
+  Ninety9Gamers
+  (Ruby, Rails, SQL, Backbone.js, BootStrap CSS)
+  Project site for gamers to exchange video games with one another
+    * Wrote UI for searching, viewing and posting games in Backbone.js, using BootStrap CSS to handle grid based layout.
+    * Used jQuery to transition UI between user interactions. Ex. using a gif of Mario running across a search modal while fetching data from backend
+    * Leveraged Giant Bomb API in order to prepopulate application with up-to-date videogame metadata such as title, description, cover art, and new releases without needing manual entry.
+    * Used Ruby on Rails to write backend with various endpoints for  methods across various resources such as users, games, and transactions.
+    * SQL
+
+Education
+  App Academy
+    June 2014 - August 2014,  San Francisco, CA
+  University of California, Santa Barbara / B.S. Biochemistry
+    2008-2012,  Santa Barbara, CA

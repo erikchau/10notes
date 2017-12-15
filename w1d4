@@ -1,0 +1,163 @@
+Interview basics
+
+whiteboarding basics
+  problem structure
+  simple optimization
+
+soft skills
+  goals
+  story telling
+  body langauge
+  exmaple questions
+
+Q&A
+
+Mock Interview
+
+________________________________________________
+
+WHITEBOARDING
+lsiten
+example input / output - simple cases. solve base case first
+brute force
+optimize
+walk through
+implement
+test
+
+\  50 - 80 resumes ~ 100  per job/
+      10 for recruiter phone calls - research company, role,
+        8-9 tech or phone screen
+          4 -5 for onsite
+            1-2 for offers
+              \ /
+               1
+
+statisically , if avg, need to apply to 80 josb for an offer
+
+on resume, interviewer looks for overlap of my experience and their needs
+
+1 or 2 technical questions that grow harder over optimize
+unless asked to give a runtime constraint, solve in brute force first
+  if i fail optimizing, i can have an answer in brute force
+optimize next
+  left to right, right to left; precomputing -> optimizatino techniques
+walkthrough
+test
+  dont erase history with variables, keep trac of old values
+think of interview as a PRESENTATION
+
+PROBLEM structure
+  starts simple
+  builds in dificulty over runtime
+  aims to identify the candidates skill level
+
+I CANNOT JUSTIFY RECOMMENDING HIRING A CANDIDATE WHO DOES NOT REACH A WORKABLE SOLUTION WITHIN THE TIME LIMIT
+
+BUD Approach
+  bottlenecks - part of the code that is sufficiently worse that everythign has to go through
+  unnecessary WORK - binary search ; dont need to look at all numbers; check middle and look at a half
+  duplicate WORK - fibonacci -: memoization save work in hash
+
+
+SOFT SKILLSSSSSSSSSSSSSSS
+  harder to teach - changing meeeeeee
+questions to assess
+  cultural fit
+  emotional / personaly traits
+  maturity level
+  life goals/ passion
+  expexted tenure
+and
+  can i work with you
+  can we all work with you
+
+tricsk to increase trust to get truth
+
+
+STORY telling
+  traditional hero narrative
+    hero naive to a threat
+    unexpectedly face teh threat and come off second best
+    dnot understand why but seek understanding
+    expereince a new  perspective thruogh a struggle or journey
+    came back to the face the threat again but this time succeed
+
+body language
+indications of nerves and stress - not truethful or worried abotu whats gona say
+disappearing
+seld comforting
+fidgeting
+sweating
+disappearing veins
+low power "fig leaf"
+
+idcations of defensiveenss
+crossed arms legs
+low bottleneckslow eyebrows
+
+how to avaoid giving away indicators
+maintain eye contact
+smile
+exposr veins
+neutral power pose
+touching
+try to mentally lower the stress
+
+how to prepare
+breating
+eating
+activity
+
+THinGS FOR ESLF TO DOOOOOO
+limit personal family life conversation
+focus on professional biography - takl about resume
+  qualifications
+  work experience
+  years at company
+  duties & responsibilities
+tell a STORY
+achievement oriented
+talk about the role youre interviewing for and how you fit the PROBLEM
+
+where do you see yoruself in 5 years
+are you here fo rlong term
+are you trying to get this josb
+or trying to get a higher level in the fiture
+discuss your focus to matery of the role
+keep any discussino of promption to general terms
+  i aim to be a key memeber
+HOW TO answer
+I DONT WANNA COMMIT TO THE SAME ROLE FOR 5 years
+DONT WANnA COMMIT TO BEING THE BOSS
+- I AM WITHIN 5 YEARS TO BE A MASTER OF X
+I PLAN ON BEING A MASTER AND I IMAGENE BY 5 YEARS IL BE A KEY MEMER OF THIS TEAM
+
+what are your weaknesses
+not personaluty trait
+not a strength in a disguide
+must be something you can improve on
+"
+in situatinoswhen.... make it contextual
+this has made me appear.....
+in the past few months iv been focusing on improving by....
+this has resulted in
+"
+THIS LINES UP TO THE SORY narrative
+
+
+
+WHYD you LEAVE YOUR LAST job / why you want to leave
+  try not to bad mouth your last employer
+  stay general, but dont get into specifics
+  donti lie, references may not corroborate
+  try to be conscious of body language
+  ****explain why in this role you will not likely have the problems of your LAST
+  performacne related firing
+not workign with experienced people and i am not growing
+figure out what job is currently not giving me
+money
+if fired - changing / mis aligned expectations
+
+
+Q & A

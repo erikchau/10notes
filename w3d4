@@ -1,0 +1,191 @@
+System DEsign & architecture
+gang of four - design patterns
+
+
+sys admin / devops
+  architecture - architect
+  personal projects vs google/facebook / mid size compmany apllication looks like
+
+abstractly
+  caching layer
+  this material is how you would answer - HOW WOULD YOU BUILD TWITTER
+
+stepping up stack / overview
+  - how to write code / algos / data structures
+  - how to understand bad / good decision
+  - design patterns
+  - this is about next level up from algso and data structures
+  - MVC - actve record is a design pattern
+  - refernce material
+  - web applcation frameworks ( categories and commonalities )
+    - can speak abstractly and generally about TOPICS
+  - uml diagrams
+  - operatinoal architectures
+    - how do yo make tihngs run
+    - how do you scale it
+    - how do two machiens talk
+      - http, custom protocol?
+
+ascending the turtles
+  - refer t slide
+  - GoF
+    - how do classes call other classes
+    - structureal - creational - behavioral
+    AVAILABLE ONLINE FREE NOW
+  - patterns of enterpose appliaction architecture
+    free on martin folwer site
+
+types of design patterns
+  creational
+    dictionary of words that store words
+    dont want to instatiate over and over
+      maybe use a singleton, so there is ever only one instance
+  structural
+    how the class fits in with other classes
+    blurred with behavioral
+    how two classes interact
+    interfaces
+  behavioral
+    characterize the ways in which classes or objects interact and distribute responsibility
+
+CREATIONS
+  factory
+    sometimes construction is complicated
+  builder
+  singleton
+    constrctor - throws an exception
+STRUCTUAL patterns
+  adapter
+    converts interface of a class into another interafce a client expects
+  composite
+    compose obects into tree strucutres to represent part-whole-heriarchies
+  decorator
+BEHAIVORAL
+  how do you call functions? what args do they take
+  command
+  observer
+    event listener
+
+PATTERNS of ENTERPRISE APPLICATION architecture
+  martin fowler
+  how to layer an application
+  active record
+    active representation of a model in the db
+    can save via .save
+  STI - single table inheritance
+    two models share same properties
+    can use same database table
+    extra column for type
+  identity map/ query object
+    QObj - when asking database about a query , can represent query as an object
+  lazy loading
+    can treat a query obj (result set) as if we already it but only run query when we need the object
+  client /server sessions
+
+WEB APPLUCATION FRAMEWORKS ( WAF )
+  the stack
+    same pieces
+  call websever and web server runs application
+  rack - websever interfaces
+    interface between my framework and webserver
+  as you scale , need to break up and put every pieice in own machine
+  WAF common features
+    routing
+    some way to talk to db
+    http parsing
+    rendering
+    user auth
+
+TYPES of FRAMEWORKS
+  MVC
+  MVP
+  MVVM
+    views -> gets models -> makes view model -> renders view model
+
+authenticateion and authorization
+  authenticates says you are who you say you are
+  authorization says you are allowed to do smoething
+  roles based authorization - user has x role
+  object based  - user can interact with x files
+
+Authentication - how to save a password
+  a user submits a webform as the body to an http post
+  the webform typically contains username/password field
+  rainbow tables
+    string 1 hash with md5
+    repeat with all numbers
+  SALT PASSWORDS
+    user name, PASSWORD given
+    generage random number (salt)
+    add to password
+    hash password + SALT
+    store salt in db
+
+Middleware
+  code executed every reqeust before and after the applcation code is executed
+
+REST
+  model api around data
+
+DISGN PROBLEMS
+
+MODEL SCHEMA
+  database - model data first
+    model out objects in problems
+  ASSUME ID< CREATRE AND UPDATED ON ON EBERY ENTRY _ STANDARD
+  twitter exampl
+    users table - list out fields
+      usernaem
+      email
+      PASSWORD
+      salt **** - shows something - didint have to explain security
+    tweets table
+      body
+      user id ( dont need to put, can draw relationshup between tables)
+      can draw table back to itself
+  ER - entity relationshup diagram
+  BLOCK DIAGRMS - whlistic view of an entire ssytem
+    represeting left t right - time or interaction
+    layers repressent dependecies - top to bottom
+  SEQUENCE diagram - single interactios
+    explain any process this way
+    time going down
+    interaction going across
+
+operation architecture- SCALING
+  ask what parts they want to see about
+    start ith whatter - interivwr
+      start with sechema , then interaction
+  sequnce diagram
+
+  Single server
+    startups look like this on day one
+
+  scaling a service
+    take easch component and analzyze each performance characterics indepnently by itself
+    ex split a db for read and write seperatly
+
+  MONOLITHES
+    one git repo, one deployment process
+    start monolithes, grow organiclly, grow horizonitally
+      later then split into microserveices
+
+  scaling large projects
+    (performance characterstics of the service, trim dtabase)
+    1) analyze database performance
+    2) look at netowrk next
+      cahcing, CDN
+    3) break apart services
+      can even break apart web server from applucation
+        webserver max numver of concurrent connections
+        can monitor request Queue time - how long did i wait before i got processed
+          need to scale up web servers
+        rouond robin loadbalanding vs cpu checking ( smart)
+
+  REASON WHY DBS ARE SLOW
+    what is dbs are split
+    DATA HAS A SINGLE SOURCE OF TRUTH
+    SHARDING - horizaontal vs vertical
+    master - slave
+
+  NETWORK VS DB BASED SLOWDOWNS
