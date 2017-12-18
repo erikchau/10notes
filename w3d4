@@ -189,3 +189,54 @@ operation architecture- SCALING
     master - slave
 
   NETWORK VS DB BASED SLOWDOWNS
+
+  CONT on w3d5
+  webservers can do routing
+  application server is our code
+  CACHE
+    ex do something expensive and store it for later
+    memoization at the application layer
+  OPTIMIZE A ssytem
+    cpu cycles on a db machine
+    number of read/write ops
+  SHARDING
+    verticle sharding - think splitting a monolith into microservices / features
+
+  OPTIMIZATION
+    look at DBS
+    nginx (webserver) configurations
+    look at breaking up services
+
+  QUEUE
+    super duper useful
+    microservices can use to talk to eachother
+    frontdoor - apis
+    backdoor
+    QUEING SYSTEM - rabbit mq
+      create any nmber of queues
+      server 1 -> send thing to queue for server 2
+      server 2 -> pops message from queue
+      QUEUE MANAGEMENT AT big SYSYTEMS
+    INTER-PROCESS COMMUNICATION
+    INTER-MACHINE COMMUNICATION
+
+  JOB RUNNER
+    USE A QUEUE typically
+    RUNS JOBS THAT ARE long and slow - background
+    scheduled tasks
+      cron
+
+  OPERATIONAL MANAGEMENT
+    orechestraion of multiple machines at the same time
+    CD/CI - jenkins travis circle solano
+    fleetmanagemnt: puppet chef
+      virtual consistency
+      writing inteligent scripts that bring machines in to a running state
+    autoscaling
+    EX
+      CI/CD passes , then hit central server ( chef / puppet)
+        it will ten redploy machiens with commit
+      DEPLOY EXAMPLE
+        deploy to half o fleet
+          wait, looks good?
+            deploy to other half of fleet
