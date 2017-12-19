@@ -1,0 +1,45 @@
+SECURITY
+
+overview
+
+questions security aims to answer
+  how do i know who are you? that you ar ewho you say you are
+    tell me something taht only you know,
+      but if i know that thing... who else might? couldnt i pretend t be you
+  how do you prove it without telling anyone else
+    bouncer analgy
+
+storing passwords
+  pw + salt
+  plain text bad - hash it
+
+ciphers
+  data + key -> garble
+  garble + key -> data
+
+  polyalphabetic ciphers
+
+  transposition
+
+  Symettric key encryptino
+    aes super fast
+    key can be anything
+    negative is that ew both need key
+
+  Asymetric crypto
+    public key encrypt
+    m^(ed) % n = m mod n
+    pub: n, e
+    priv: n, d
+
+  RSA - integer factorzation and prime findign
+
+
+  key exchange
+    client                  server
+              ->
+              <- public key
+
+  web of trust model
+
+  
